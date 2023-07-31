@@ -1,0 +1,17 @@
+let but = document.getElementById("customButton");
+
+function apply() {
+    let bgcolor = document.getElementById('bgColorInput');
+    but.style.backgroundColor = bgcolor.value;
+    let fontcolor = document.getElementById('fontColorInput');
+    but.style.color = fontcolor.value;
+    let size = document.getElementById('fontSizeInput');
+    but.style.fontSize = size.value;
+    let weight = document.getElementById("fontWeightInput");
+    but.style.fontWeight = weight.value;
+    let padd = document.getElementById('paddingInput');
+    but.style.padding = padd.value;
+    let radius = document.getElementById('borderRadiusInput');
+    but.style.borderRadius = radius.value;
+
+}
