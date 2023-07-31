@@ -1,0 +1,22 @@
+let gameResult = document.getElementById("gameResult");
+let userInput = document.getElementById("userInput");
+let genratedNumber = Math.ceil(Math.random() * 100);
+
+function checkGuess() {
+    let userInput1 = parseInt(userInput.value);
+    if (genratedNumber < userInput1) {
+
+        gameResult.textContent = "Too High Try Again";
+
+    } else if (genratedNumber > userInput1) {
+        gameResult.textContent = "Too Low Try Again";
+
+    } else if (genratedNumber === userInput1) {
+        gameResult.textContent = "Congratulations You Gussed Right";
+    } else {
+        gameResult.textContent = "Please Provide valid Input";
+
+    }
+
+
+}
