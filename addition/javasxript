@@ -1,0 +1,26 @@
+let num1 = document.getElementById("firstNumber");
+let num2 = document.getElementById("secondNumber");
+let first = parseInt(Math.random() * 100);
+num1.textContent = first;
+let second = parseInt(Math.random() * 100);
+num2.textContent = second;
+let add = first + second;
+let para = document.getElementById("gameResult");
+
+let userInpt = document.getElementById("userInput");
+
+function check() {
+    if (add === parseInt(userInpt.value)) {
+        para.textContent = "Congratulations! you got it right";
+        para.style.backgroundColor = "green";
+    } else {
+        para.textContent = "Please Try Again ";
+        para.style.backgroundColor = "red";
+    }
+}
+
+function remove() {
+    userInpt.value = "";
+    para.textContent = "";
+
+}
